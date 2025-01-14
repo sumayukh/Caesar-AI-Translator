@@ -6,7 +6,7 @@
     "codespaces": {
       "openFiles": [
         "README.md",
-        "src/views/Caesar.py"
+        "main.py"
       ]
     },
     "vscode": {
