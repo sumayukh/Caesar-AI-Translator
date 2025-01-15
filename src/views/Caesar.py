@@ -1,12 +1,5 @@
-import sys
-import os
-
-# Add the `src` directory to the system path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 import streamlit as st
-from models import *
-#from src.models.helsinki.langchain_init import llmchain_init
+from src.models import *
 
 
 lang_list = [
