@@ -1,5 +1,10 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
-from src.models import *
+from models import *
 
 
 lang_list = [
@@ -19,6 +24,8 @@ translation = ''
 
 for item in lang_list:
     item['disabled'] = False
+
+st.set_page_config(page_icon=":volcano", page_title="Caesar AI")
 
 if 'lang_list' not in st.session_state:
     st.session_state['lang_list'] = lang_list
